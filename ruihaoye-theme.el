@@ -3,7 +3,6 @@
 
 (custom-theme-set-variables
  'ruihaoye
- '(auto-save-default nil)
  '(case-fold-search nil)
  '(global-paren-face-mode t)
  '(default-frame-alist (quote ((width . 100) (height . 50) (left . 600) (top . 20))))
@@ -11,16 +10,13 @@
  '(indent-tabs-mode nil)
  '(inhibit-startup-screen t)
  '(major-mode (quote text-mode))
- '(make-backup-files nil)
  '(mouse-wheel-scroll-amount (quote (3 ((shift) . 1) ((control)))))
  '(speedbar-show-unknown-files t)
- '(sr-speedbar-default-width 60)
- '(sr-speedbar-max-width 80)
+ '(sr-speedbar-default-width 25)
  '(tab-width 2)
  '(word-wrap t)
  '(tool-bar-mode nil)
  '(show-paren-mode t)
- '(global-linum-mode t)
  '(electric-pair-mode t))
 
 (custom-theme-set-faces

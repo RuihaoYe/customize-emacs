@@ -5,6 +5,9 @@
 (require-package 'flycheck)
 ;; go get goflymake
 
+(add-hook 'go-mode-hook
+          'linum-mode)
+
 ;; go-mode
 (require 'go-mode)
 (add-hook 'before-save-hook 'gofmt-before-save)

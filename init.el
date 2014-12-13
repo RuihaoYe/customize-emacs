@@ -1,12 +1,16 @@
+(setq make-backup-files nil)
+(setq auto-save-default nil)
+
 (add-to-list 'load-path (expand-file-name "init" user-emacs-directory))
 
 ;; init package-archives and provide require-package
 (require 'init-elpa)
-
-;;; install packages
+;; install packages
 (require-package 'sr-speedbar)
+(require-package 'paren-face)
 
 (require 'init-keys)
+(require 'init-elisp)
 (require 'init-go)
 
 (custom-set-variables
@@ -15,7 +19,12 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(custom-enabled-themes (quote (ruihaoye)))
- '(custom-safe-themes (quote ("0d402ff1a7325a23d6d04880101e9c4ae289f4e6bc3fe5cb826caf1ee994eb5c" default))))
+ '(custom-safe-themes t)
+ '(fringe-mode (quote (nil . 0)) nil (fringe))
+ '(package-archives (quote (("melpa-stable" . "http://stable.melpa.org/packages/") ("melpa" . "http://melpa.org/packages/"))))
+ '(projectile-global-mode t)
+ '(sr-speedbar-auto-refresh nil)
+ '(sr-speedbar-right-side nil))
 
 (setq font-family
       (cond
