@@ -1,48 +1,31 @@
-(setq package-archives
-'(
-  ("original" . "http://tromey.com/elpa/")
-  ("gnu" . "http://elpa.gnu.org/packages/")
-  ("marmalade" . "http://marmalade-repo.org/packages/")
-  ("melpa" . "http://melpa.milkbox.net/packages/")))
-(package-initialize)
+(add-to-list 'load-path (expand-file-name "init" user-emacs-directory))
 
-;; package installed:
-;; sr-speedbar
+;; init package-archives and provide require-package
+(require 'init-elpa)
 
-;; (require 'paren-face)
-(global-paren-face-mode t)
+;;; install packages
+(require-package 'sr-speedbar)
 
-(load "/home/ruihaoye/.emacs.d/keys.el")
-(load "/home/ruihaoye/.emacs.d/go.el")
+(require 'init-keys)
+(require 'init-go)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(auto-save-default nil)
- '(case-fold-search nil)
- '(custom-enabled-themes (quote (dichromacy)))
- '(default-frame-alist (quote ((width . 100) (height . 50) (left . 600) (top . 20))))
- '(electric-pair-mode t)
- '(fill-column 80)
- '(global-linum-mode t)
- '(indent-tabs-mode nil)
- '(inhibit-startup-screen t)
- '(major-mode (quote text-mode))
- '(make-backup-files nil)
- '(mouse-wheel-scroll-amount (quote (3 ((shift) . 1) ((control)))))
- '(show-paren-mode t)
- '(speedbar-show-unknown-files t)
- '(sr-speedbar-default-width 60)
- '(sr-speedbar-max-width 80)
- '(tab-width 2)
- '(tool-bar-mode nil))
+ '(custom-enabled-themes (quote (ruihaoye)))
+ '(custom-safe-themes (quote ("0d402ff1a7325a23d6d04880101e9c4ae289f4e6bc3fe5cb826caf1ee994eb5c" default))))
+
+(setq font-family
+      (cond
+       ((eq system-type 'gnu/linux) "Ubuntu Mono")
+       ((eq system-type 'windows-nt "mono"))))
+(setq font-foundry "unknown")
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:family "Ubuntu Mono" :foundry "unknown" :slant normal :weight normal :height 120 :width normal))))
- '(show-paren-match ((t (:background "light blue")))))
+ '(default ((t (:family font-family :foundry font-foundry :slant normal :weight normal :height 120 :width normal)))))

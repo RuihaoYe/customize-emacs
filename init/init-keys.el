@@ -17,5 +17,8 @@
 ;; delete and select
 (global-set-key (kbd "M-f") 'delete-char)
 (global-set-key (kbd "M-d") 'backward-delete-char-untabify)
+(global-set-key (kbd "C-j") 'delete-indentation)
 (global-set-key (kbd "C-c b") 'kill-this-buffer)
 ;; change keys end
+
+(provide 'init-keys)
