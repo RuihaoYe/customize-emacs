@@ -8,6 +8,7 @@
 ;; install packages
 (require-package 'sr-speedbar)
 (require-package 'paren-face)
+(require-package 'yasnippet)
 
 (require 'init-keys)
 (require 'init-elisp)
@@ -24,7 +25,8 @@
  '(package-archives (quote (("melpa-stable" . "http://stable.melpa.org/packages/") ("melpa" . "http://melpa.org/packages/"))))
  '(projectile-global-mode t)
  '(sr-speedbar-auto-refresh nil)
- '(sr-speedbar-right-side nil))
+ '(sr-speedbar-right-side nil)
+ '(yas-global-mode t nil (yasnippet)))
 
 (setq font-family
       (cond

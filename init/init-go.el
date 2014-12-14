@@ -23,16 +23,16 @@
              (local-set-key (kbd "C-S-f") 'gofmt)))
 ;; godoc
 ;; godef-describe:
-(add-hook 'go-mode-hook
-          '(lambda ()
-             (local-set-key (kbd "<f1>") 'godef-describe)))
-;; godef-jump
+;; godef-jump:
+(defun my-godef-jump ()
+  "")
 (add-hook 'go-mode-hook
           '(lambda ()
              (local-set-key (kbd "<f3>") 'godef-jump)))
+;; jump back:
 (add-hook 'go-mode-hook
           '(lambda ()
-             (local-set-key (kbd "<f2>") 'kill-this-buffer)))
+             (local-set-key (kbd "<f2>") 'pop-tag-mark)))
 
 ;; goflymake
 ;; (load "/home/ruhaoye/go/src/github.com/dougm/goflymake/go-flymake.el")
