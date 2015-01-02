@@ -7,10 +7,8 @@
 ;; init package-archives and provide require-package
 (require 'init-elpa)
 ;; install packages
-(require-package 'sr-speedbar)
-(require-package 'paren-face)
-(require-package 'yasnippet)
 (require-package 'yaml-mode)
+(require 'window-numbering)
 
 (require 'init-theme)
 (require 'init-keys)
@@ -37,8 +35,7 @@
  '(package-archives (quote (("melpa-stable" . "http://stable.melpa.org/packages/") ("melpa" . "http://melpa.org/packages/"))))
  '(projectile-global-mode t)
  '(sr-speedbar-right-side nil)
- ;; '(yas-global-mode t nil (yasnippet))
- )
+ '(window-numbering-mode t))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
