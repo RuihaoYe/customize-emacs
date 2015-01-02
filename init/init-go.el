@@ -1,5 +1,5 @@
 ;;;; package install:
-(require-package 'go-mode)
+; (require-package 'go-mode)
 (require-package 'company-go)
 (require-package 'flymake)
 (require-package 'flycheck)
@@ -16,7 +16,10 @@
 (add-hook 'go-mode-hook
           '(lambda ()
              (local-set-key (kbd "C-c C-r") 'go-remove-unused-imports)))
-;; go-goto-imports
+;; go-goto-imports:
+(add-hook 'go-mode-hook
+          '(lambda ()
+             (local-set-key (kbd "<f4>") 'go-goto-imports)))
 ;; gofmt:
 (add-hook 'go-mode-hook
           '(lambda ()
@@ -46,5 +49,7 @@
           (lambda ()
            (set (make-local-variable 'company-backends) '(company-go))
            (company-mode)))
+
+(add-hook 'go-mode-hook 'edit-modeline)
 
 (provide 'init-go)

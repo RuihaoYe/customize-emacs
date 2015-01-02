@@ -17,7 +17,8 @@
  '(word-wrap t)
  '(tool-bar-mode nil)
  '(show-paren-mode t)
- '(electric-pair-mode t))
+ '(electric-pair-mode t)
+ '(line-number-mode nil))
 
 (custom-theme-set-faces
  'ruihaoye
