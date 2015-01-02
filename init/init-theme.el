@@ -11,8 +11,6 @@
  '(sr-speedbar-right-side nil)
  '(yas-global-mode t nil (yasnippet)))
 
-(set-face-attribute 'default nil :font "Ubuntu Mono")
-
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
