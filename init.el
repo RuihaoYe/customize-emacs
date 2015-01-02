@@ -10,7 +10,6 @@
 (require-package 'yaml-mode)
 (require 'window-numbering)
 
-(require 'init-theme)
 (require 'init-keys)
 (require 'init-elisp)
 (unless (eq system-type 'windows-nt)
