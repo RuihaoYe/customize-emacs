@@ -12,7 +12,7 @@
  '(major-mode (quote text-mode))
  '(mouse-wheel-scroll-amount (quote (3 ((shift) . 1) ((control)))))
  '(speedbar-show-unknown-files t)
- '(sr-speedbar-default-width 25)
+ '(sr-speedbar-default-width 28)
  '(tab-width 2)
  '(word-wrap t)
  '(tool-bar-mode nil)
