@@ -8,12 +8,14 @@
 (require 'init-elpa)
 ;; install packages
 (require-package 'yaml-mode)
-(require 'window-numbering)
 
 (require 'init-keys)
 (require 'init-elisp)
+(require 'init-org)
 (unless (eq system-type 'windows-nt)
   (require 'init-go))
+(require 'window-numbering)
+(require 'sr-speedbar)
 
 ;; chinese-fonts-setup
 (require 'chinese-fonts-setup)
