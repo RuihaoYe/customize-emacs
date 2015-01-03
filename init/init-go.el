@@ -1,6 +1,6 @@
 ;;;; package install:
 ; (require-package 'go-mode)
-(require-package 'company-go)
+(require-package 'company)
 (require-package 'flymake)
 (require-package 'flycheck)
 ;; go get goflymake
@@ -44,11 +44,15 @@
 ;; (require 'go-flycheck)
 
 ;; gocode
+(require 'company-go)
 (add-hook 'go-mode-hook 'company-mode)
 (add-hook 'go-mode-hook
           (lambda ()
            (set (make-local-variable 'company-backends) '(company-go))
            (company-mode)))
+(setq company-idle-delay .3)
+(setq company-echo-delay 0)
+(setq company-begin-commands '(self-insert-command))
 
 (add-hook 'go-mode-hook 'edit-modeline)
 
