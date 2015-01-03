@@ -3,6 +3,7 @@
 
 (add-to-list 'load-path (expand-file-name "init" user-emacs-directory))
 (add-to-list 'load-path (expand-file-name "my-packages" user-emacs-directory))
+(add-to-list 'load-path (expand-file-name "my-packages/org-lisp/" user-emacs-directory))
 
 ;; init package-archives and provide require-package
 (require 'init-elpa)
@@ -33,7 +34,6 @@
  '(custom-enabled-themes (quote (ruihaoye)))
  '(custom-safe-themes t)
  '(fringe-mode (quote (nil . 0)) nil (fringe))
- '(package-archives (quote (("melpa-stable" . "http://stable.melpa.org/packages/") ("melpa" . "http://melpa.org/packages/"))))
  '(projectile-global-mode t)
  '(sr-speedbar-right-side nil)
  '(window-numbering-mode t))
