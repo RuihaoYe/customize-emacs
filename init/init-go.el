@@ -5,8 +5,8 @@
 (require-package 'flycheck)
 ;; go get goflymake
 
-(add-hook 'go-mode-hook
-          'linum-mode)
+(add-hook 'go-mode-hook 'linum-mode)
+(add-hook 'go-mode-hook 'edit-modeline)
 
 ;; go-mode
 (require 'go-mode)
@@ -53,7 +53,5 @@
 (setq company-idle-delay .3)
 (setq company-echo-delay 0)
 (setq company-begin-commands '(self-insert-command))
-
-(add-hook 'go-mode-hook 'edit-modeline)
 
 (provide 'init-go)

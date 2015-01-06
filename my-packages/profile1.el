@@ -8,7 +8,7 @@
 ;;;    而windows自带的方正系列以及Sim系列的中文字体都无法识别，原因未知。
 (setq cfs--custom-set-fonts-names
       '(
-        ("Source Code Pro" "Ubuntu Mono" "Consolas" "DejaVu Sans Mono" "Inconsolata" "Courier New")
+        ("Consolas" "Source Code Pro" "Ubuntu Mono" "DejaVu Sans Mono" "Inconsolata" "Courier New")
         ("文泉驿等宽微米黑" "微软雅黑" "华文中宋" "仿宋_GB2312" "宋体" "新宋体" "黑体" "Microsoft Yahei" "Microsoft_Yahei"  "Hiragino Sans GB" "文泉驿等宽正黑" "文泉驿正黑" "文泉驿点阵正黑" "楷体_GB2312" "幼圆" "隶书" "方正姚体" "方正舒体" "方正粗圆_GBK" "华文仿宋" "华文彩云" "华文新魏" "华文细黑" "华文行楷")
         ("HanaMinB" "SimSun-ExtB" "MingLiU-ExtB" "PMingLiU-ExtB" "MingLiU_HKSCS-ExtB")
        ))

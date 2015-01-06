@@ -14,7 +14,6 @@
  '(speedbar-show-unknown-files t)
  '(sr-speedbar-default-width 28)
  '(tab-width 2)
- '(word-wrap t)
  '(tool-bar-mode nil)
  '(show-paren-mode t)
  '(electric-pair-mode t)
