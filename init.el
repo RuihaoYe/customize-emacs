@@ -34,7 +34,6 @@
  ;; If there is more than one, they won't work right.
  '(custom-enabled-themes (quote (ruihaoye)))
  '(custom-safe-themes t)
- '(fringe-mode (quote (nil . 0)) nil (fringe))
  '(projectile-global-mode t)
  '(sr-speedbar-right-side nil)
  '(window-numbering-mode t))
