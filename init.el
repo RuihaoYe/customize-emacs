@@ -13,6 +13,7 @@
 (require 'init-keys)
 (require 'init-elisp)
 (require 'init-org)
+(require 'init-md)
 (unless (eq system-type 'windows-nt)
   (require 'init-go))
 (require 'window-numbering)
