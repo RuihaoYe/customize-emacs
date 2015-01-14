@@ -1,15 +1,16 @@
 ;;;; package install:
 ; (require-package 'go-mode)
 (require-package 'company)
-(require-package 'flymake)
-(require-package 'flycheck)
+;; (require-package 'flymake)
+;; (require-package 'flycheck)
 ;; go get goflymake
 
 (add-hook 'go-mode-hook 'linum-mode)
 (add-hook 'go-mode-hook 'edit-modeline)
 
-;; go-mode
+;;; go-mode
 (require 'go-mode)
+;; gofmt
 (add-hook 'before-save-hook 'gofmt-before-save)
 ;; go-import-add: C-c C-a
 ;; go-remove-unused-imports:
@@ -53,5 +54,18 @@
 (setq company-idle-delay .3)
 (setq company-echo-delay 0)
 (setq company-begin-commands '(self-insert-command))
+;; company-dabbrev
+(add-hook 'go-mode-hook
+          '(lambda ()
+             (local-set-key (kbd "C-/") 'company-dabbrev)))
+;; company-complete
+(add-hook 'go-mode-hook
+          '(lambda ()
+             (local-set-key (kbd "M-/") 'company-complete)))
+
+;;; some tips abount company-mode
+;;  Use M-n, M-p, M-<digit> to select
 
 (provide 'init-go)
+
+;;; go-mode end
