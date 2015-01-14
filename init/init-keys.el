@@ -22,9 +22,10 @@
 ;; change keys end
 
 ;; edit modeline
+;; change `dired-directory` to nil
 (defun edit-modeline ()
   (add-to-list 'mode-line-buffer-identification 
-             '(:propertize (:eval (shorten-directory default-directory 30)) face dired-directory)))
+             '(:propertize (:eval (shorten-directory default-directory 30)) face nil)))
 ;; helper function
 (defun shorten-directory (dir max-length)
   "Show up to `max-length' characters of a directory name `dir'."

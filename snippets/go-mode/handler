@@ -1,0 +1,8 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: http.Handler
+# key: handler
+# binding: direct-keybinding
+# --
+func $1(w http.ResponseWriter, r *http.Request) {
+     $2
+}

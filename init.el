@@ -18,6 +18,7 @@
   (require 'init-go))
 (require 'window-numbering)
 (require 'sr-speedbar)
+(require 'yasnippet)
 
 ;; chinese-fonts-setup
 (require 'chinese-fonts-setup)
@@ -34,6 +35,7 @@
  ;; If there is more than one, they won't work right.
  '(custom-enabled-themes (quote (ruihaoye)))
  '(custom-safe-themes t)
+ '(json-reformat:pretty-string\? t)
  '(projectile-global-mode t)
  '(sr-speedbar-right-side nil)
  '(window-numbering-mode t))
