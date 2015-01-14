@@ -66,6 +66,9 @@
 ;;; some tips abount company-mode
 ;;  Use M-n, M-p, M-<digit> to select
 
-(provide 'init-go)
+;; go-eldoc
+(require 'go-eldoc)
+(add-hook 'go-mode-hook 'go-eldoc-setup)
 
+(provide 'init-go)
 ;;; go-mode end
