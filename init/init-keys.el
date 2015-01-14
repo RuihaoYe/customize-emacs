@@ -19,6 +19,9 @@
 (global-set-key (kbd "M-d") 'backward-delete-char-untabify)
 (global-set-key (kbd "C-j") 'delete-indentation)
 (global-set-key (kbd "C-c b") 'kill-this-buffer)
+;; undo
+(global-unset-key (kbd "C-/"))
+(global-set-key (kbd "C-z") 'undo)
 ;; change keys end
 
 ;; edit modeline
