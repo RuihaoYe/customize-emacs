@@ -51,10 +51,7 @@
 (setq company-idle-delay .3)
 (setq company-echo-delay 0)
 (setq company-begin-commands '(self-insert-command))
-;; company-dabbrev: C-/
-(add-hook 'go-mode-hook
-          '(lambda ()
-             (local-set-key (kbd "C-/") 'company-dabbrev)))
+;; company-dabbrev: nil
 ;; company-complete: M-/
 (add-hook 'go-mode-hook
           '(lambda ()

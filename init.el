@@ -11,6 +11,7 @@
 (require-package 'yaml-mode)
 
 (require 'init-keys)
+(require 'init-c)
 (require 'init-elisp)
 (require 'init-org)
 (require 'init-md)
@@ -27,6 +28,9 @@
   (setq cfs--profiles-fontsizes '(11.5 12.5 12.5)))
  ((eq system-type 'gnu/linux)
   (setq cfs--profiles-fontsizes '(12.5 12.5 12.5))))
+
+(setq c-default-style "java"
+      c-basic-offset 4)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
